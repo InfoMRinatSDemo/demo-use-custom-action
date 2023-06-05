@@ -18,13 +18,7 @@ jobs:
   call_composite_action:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v3
-          with: 
-            repository: InfoMRinatSDemo/demo-custom-action-dd
-            path: ./custom-action
-            # token: ${{ secrets.MY_REPO_SECRET }}
-            
         - name: Call Composite Action
-          uses: ./custom-action
+          uses: InfoMRinatSDemo/demo-custom-action-dd
           with:
             who-to-greet: "Delta Dental"
