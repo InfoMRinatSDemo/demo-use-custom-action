@@ -22,7 +22,7 @@ jobs:
           with: 
             repository: InfoMRinatSDemo/demo-custom-action-dd
             path: ./custom-action
-            token: ${{ secrets.MY_REPO_SECRET }}
+            # token: ${{ secrets.MY_REPO_SECRET }}
             
         - name: Call Composite Action
           uses: ./custom-action
